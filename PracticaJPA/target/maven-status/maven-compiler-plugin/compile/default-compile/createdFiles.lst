@@ -1,5 +1,6 @@
 com\mycompany\practicajpa\persistencia\exceptions\PreexistingEntityException.class
 com\mycompany\practicajpa\logica\Alumno_.class
+com\mycompany\practicajpa\logica\ControladoraLogica.class
 com\mycompany\practicajpa\persistencia\exceptions\NonexistentEntityException.class
 com\mycompany\practicajpa\PracticaJPA.class
 com\mycompany\practicajpa\persistencia\AlumnoJpaController.class
