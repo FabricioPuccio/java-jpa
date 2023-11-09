@@ -35,4 +35,8 @@ public class ControladoraPersistencia {
         }
     }
 
+    public Alumno findAlumnoById(int id) {
+        return ajc.findAlumno(id);
+    }
+
 }

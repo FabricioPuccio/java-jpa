@@ -36,4 +36,8 @@ public class ControladoraLogica {
             Logger.getLogger(ControladoraLogica.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
+    public Alumno findAlumnoById(int id) {
+        return contPersis.findAlumnoById(id);
+    }
 }
