@@ -2,6 +2,7 @@ package com.mycompany.practicajpa.logica;
 
 import com.mycompany.practicajpa.persistencia.ControladoraPersistencia;
 import com.mycompany.practicajpa.persistencia.exceptions.NonexistentEntityException;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -39,5 +40,9 @@ public class ControladoraLogica {
 
     public Alumno findAlumnoById(int id) {
         return contPersis.findAlumnoById(id);
+    }
+
+    public List<Alumno> getListAlumno() {
+        return contPersis.getListAlumno();
     }
 }
