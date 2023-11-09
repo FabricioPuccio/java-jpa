@@ -97,6 +97,7 @@ public class Alumno implements Serializable {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    @Override
     public String toString() {
         return "\nAlumno id: " + id + "| Nombre: " + nombre + " Apellido: " + apellido + " Fecha de nacimiento: " + fechaNacimiento + "";
     }

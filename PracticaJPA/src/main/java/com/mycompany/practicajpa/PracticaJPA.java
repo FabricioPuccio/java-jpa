@@ -1,9 +1,10 @@
-
 package com.mycompany.practicajpa;
+
+import com.mycompany.practicajpa.persistencia.ControladoraPersistencia;
 
 public class PracticaJPA {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        ControladoraPersistencia contPersist = new ControladoraPersistencia();
     }
 }
