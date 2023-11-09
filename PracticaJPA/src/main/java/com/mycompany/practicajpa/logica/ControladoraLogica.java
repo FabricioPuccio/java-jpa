@@ -1,6 +1,9 @@
 package com.mycompany.practicajpa.logica;
 
 import com.mycompany.practicajpa.persistencia.ControladoraPersistencia;
+import com.mycompany.practicajpa.persistencia.exceptions.NonexistentEntityException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -16,5 +19,21 @@ public class ControladoraLogica {
 
     public void createAlumno(Alumno alumno) {
         contPersis.createAlmuno(alumno);
+    }
+
+    public void deleteAlumno(int id) {
+        try {
+            contPersis.deleteAlumno(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(ControladoraLogica.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void updateAlumno(Alumno alumno) {
+        try {
+            contPersis.updateAlumno(alumno);
+        } catch (Exception ex) {
+            Logger.getLogger(ControladoraLogica.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
